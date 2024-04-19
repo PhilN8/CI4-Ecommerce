@@ -4,11 +4,11 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class Role extends Model
+class Category extends Model
 {
-    protected $table = 'tbl_roles';
+    protected $table = 'tbl_categories';
 
-    protected $primaryKey = 'role_id';
+    protected $primaryKey = 'category_id';
 
     protected $useAutoIncrement = true;
 

@@ -4,17 +4,17 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class Role extends Model
+class SubCategory extends Model
 {
-    protected $table = 'tbl_roles';
+    protected $table = 'tbl_subcategories';
 
-    protected $primaryKey = 'role_id';
+    protected $primaryKey = 'subcategory_id';
 
     protected $useAutoIncrement = true;
 
     protected $returnType = 'array';
 
-    protected $useSoftDeletes = false;
+    protected $useSoftDeletes = true;
 
     protected $protectFields = true;
 
@@ -29,7 +29,7 @@ class Role extends Model
     protected array $castHandlers = [];
 
     // Dates
-    protected $useTimestamps = false;
+    protected $useTimestamps = true;
 
     protected $dateFormat = 'datetime';
 

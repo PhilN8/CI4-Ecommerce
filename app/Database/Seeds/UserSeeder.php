@@ -28,10 +28,10 @@ class UserSeeder extends Seeder
         }
 
         // Create 10 users
-        $users = (new Fabricator(User::class))->make(10);
+        // $users = (new Fabricator(User::class))->make(10);
 
-        $this->db
-            ->table('tbl_users')
-            ->insertBatch($users);
+        // $this->db
+        //     ->table('tbl_users')
+        //     ->insertBatch($users);
     }
 }

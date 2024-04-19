@@ -94,7 +94,7 @@ class User extends Model
 
     protected function hashPassword(array $data): array
     {
-        if (!isset($data['data']['password'])) {
+        if (! isset($data['data']['password'])) {
             return $data;
         }
 
