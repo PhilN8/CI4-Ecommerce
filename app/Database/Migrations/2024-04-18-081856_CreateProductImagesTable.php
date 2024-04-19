@@ -25,17 +25,8 @@ class CreateProductImagesTable extends Migration
                 'constraint' => 11,
                 'unsigned' => true,
             ],
-            'created_at' => [
-                'type' => 'DATETIME',
-                'null' => false,
-                'default' => 'CURRENT_TIMESTAMP',
-            ],
-            'updated_at' => [
-                'type' => 'DATETIME',
-                'null' => false,
-                'default' => 'CURRENT_TIMESTAMP',
-                'on update' => 'CURRENT_TIMESTAMP',
-            ],
+            'created_at datetime default current_timestamp',
+            'updated_at datetime default current_timestamp',
             'added_by' => [
                 'type' => 'INT',
                 'constraint' => 11,

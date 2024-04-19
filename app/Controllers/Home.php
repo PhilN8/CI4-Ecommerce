@@ -2,10 +2,13 @@
 
 namespace App\Controllers;
 
+use App\Models\User;
+use CodeIgniter\Test\Fabricator;
+
 class Home extends BaseController
 {
-    public function index(): string
+    public function index(): array|object
     {
-        return view('welcome_message');
+        dd((new Fabricator(User::class))->make(10));
     }
 }

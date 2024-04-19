@@ -20,17 +20,8 @@ class CreateCategoriesTable extends Migration
                 'constraint' => 25,
                 'null' => false,
             ],
-            'created_at' => [
-                'type' => 'DATETIME',
-                'null' => false,
-                'default' => 'CURRENT_TIMESTAMP',
-            ],
-            'updated_at' => [
-                'type' => 'DATETIME',
-                'null' => false,
-                'default' => 'CURRENT_TIMESTAMP',
-                'on update' => 'CURRENT_TIMESTAMP',
-            ],
+            'created_at datetime default current_timestamp',
+            'updated_at datetime default current_timestamp',
             'is_deleted' => [
                 'type' => 'TINYINT',
                 'constraint' => 1,

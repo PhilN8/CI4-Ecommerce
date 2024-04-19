@@ -25,17 +25,8 @@ class CreateApiUsersTable extends Migration
                 'constraint' => 100,
                 'null' => false,
             ],
-            'created_at' => [
-                'type' => 'DATETIME',
-                'null' => false,
-                'default' => 'CURRENT_TIMESTAMP',
-            ],
-            'updated_on' => [
-                'type' => 'DATETIME',
-                'null' => false,
-                'default' => 'CURRENT_TIMESTAMP',
-                'on update' => 'CURRENT_TIMESTAMP',
-            ],
+            'created_at datetime default current_timestamp',
+            'updated_at datetime default current_timestamp',
             'added_by' => [
                 'type' => 'INT',
                 'constraint' => 11,
